@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 @Entity
-public class Spaceship {//implements Control {
+public class Spaceship implements Control {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -80,7 +80,7 @@ public class Spaceship {//implements Control {
     public void turnLeft() {
         int actualCoordinate = cardinalPoints.indexOf(spaceshipDirection);
         if (actualCoordinate == 0) {
-            spaceshipDirection = cardinalPoints.get(0);
+            spaceshipDirection = cardinalPoints.get(3);
         } else {
             spaceshipDirection = cardinalPoints.get(actualCoordinate - 1);
         }

@@ -24,7 +24,7 @@ public class MovementController {
 
     @PutMapping(value = "/{idSpaceship}/{coordinates}", produces = "application/json")
     @Transactional
-    public ResponseEntity moveShipment(@PathVariable("idSpaceship") int idSpaceship, @PathVariable ("coordinates") String coordinates){
+    public ResponseEntity moveSpaceship(@PathVariable("idSpaceship") int idSpaceship, @PathVariable ("coordinates") String coordinates){
         Optional<Spaceship> spaceship = repository.findById(idSpaceship);
         List<Spaceship> spaceshipList = repository.findAll();
         if(repository.existsById(idSpaceship)){

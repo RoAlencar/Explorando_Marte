@@ -27,15 +27,19 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="0252fb5c-14bd-4197-a187-e53a45f5d667">
-      <console name="Teste" type="STANDARD" schema="information_schema" session="Main" />
+    <connection id="02c3bb8e-f64f-4aa6-abfd-93e9d245db03">
+      <console name="Explorando Marte" type="STANDARD" schema="information_schema" session="Main" />
+    </connection>
+    <connection id="da95cd03-41e3-4c0b-ad44-4eec34023163">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="0252fb5c-14bd-4197-a187-e53a45f5d667" />
+    <connection id="02c3bb8e-f64f-4aa6-abfd-93e9d245db03" />
+    <connection id="da95cd03-41e3-4c0b-ad44-4eec34023163" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -44,7 +48,7 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/ExplorandoMarte/src/main/resources/data.sql" connection-id="0252fb5c-14bd-4197-a187-e53a45f5d667" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/ExplorandoMarte/src/main/resources/data.sql" connection-id="02c3bb8e-f64f-4aa6-abfd-93e9d245db03" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$APPLICATION_CONFIG_DIR$/consoles/db/22371a81-f143-4390-9239-b0f6fe9ab09a/console.sql" connection-id="0252fb5c-14bd-4197-a187-e53a45f5d667" session-id="MAIN" current-schema="information_schema" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
@@ -70,10 +74,10 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="0252fb5c-14bd-4197-a187-e53a45f5d667" active="true" signed="false">
+      <connection id="02c3bb8e-f64f-4aa6-abfd-93e9d245db03" active="true" signed="false">
         <database>
-          <name value="Teste" />
-          <description value="teste de conexão" />
+          <name value="Explorando Marte" />
+          <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="14.2" />
@@ -83,10 +87,91 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="teste" />
+          <database value="ExplorandoMarte" />
           <type value="USER_PASSWORD" />
           <user value="postgres" />
           <deprecated-pwd value="WFhYSS5YLk1NWFZJSQ==" />
+        </database>
+        <properties>
+          <auto-commit value="true" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="true" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="false" />
+          <environment-type value="default" />
+          <connectivity-timeout value="5" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="da95cd03-41e3-4c0b-ad44-4eec34023163" active="true" signed="false">
+        <database>
+          <name value="Connection" />
+          <description value="" />
+          <database-type value="GENERIC" />
+          <config-type value="CUSTOM" />
+          <database-version value="9999.0" />
+          <driver-source value="EXTERNAL" />
+          <driver-library value="" />
+          <driver value="" />
+          <url value="" />
+          <type value="USER_PASSWORD" />
+          <user value="" />
+          <deprecated-pwd value="" />
         </database>
         <properties>
           <auto-commit value="false" />

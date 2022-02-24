@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+import static org.springframework.http.ResponseEntity.ok;
+
 @RestController
 @RequestMapping("/spaceship")
 public class SpaceshipController {
@@ -47,7 +49,7 @@ public class SpaceshipController {
     public ResponseEntity readAllSpaceships(){
         List<Spaceship> spaceships = this.repository.findAll();
         if(spaceships.size() > 0) {
-            return ResponseEntity.ok(spaceships);
+            return ok(spaceships);
         } else {
             return new ResponseEntity("Central command: No spaceships have been launched, the mission has not started yet, please wait for the ships to be released.", HttpStatus.NO_CONTENT);
         }
