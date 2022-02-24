@@ -68,7 +68,7 @@ public class Spaceship {//implements Control {
         this.planet = planet;
     }
 
-    /*public void turnRight() {
+    public void turnRight() {
         int actualCoordinate = cardinalPoints.indexOf(spaceshipDirection);
         if (actualCoordinate == 3) {
             spaceshipDirection = cardinalPoints.get(0);
@@ -84,24 +84,23 @@ public class Spaceship {//implements Control {
         } else {
             spaceshipDirection = cardinalPoints.get(actualCoordinate - 1);
         }
-
-        public void makeMove(){
-            if(this.spaceshipDirection.equals("N") && this.positionY < this.planet.getY()){
-                this.positionY++;
-            }else if(this.spaceshipDirection.equals("S") && this.positionY > 0){
-                this.positionY--;
-            }else if(this.spaceshipDirection.equals("E") && this.positionX < this.planet.getX()){
-                this.positionX++;
-            }else if(this.spaceshipDirection.equals("W") && this.positionX > 0){
-                this.positionX--;
-            }else{
-                System.out.println("movement not computed, please insert one of the valid movements. (Ex: N,S,E,W)");
-            }
+    }
+    public void makeMove() {
+        if(this.spaceshipDirection.equals("N") && this.positionY < this.planet.getY()){
+            this.positionY++;
+        }else if(this.spaceshipDirection.equals("S") && this.positionY > 0){
+            this.positionY--;
+        }else if(this.spaceshipDirection.equals("E") && this.positionX < this.planet.getX()){
+            this.positionX++;
+        }else if(this.spaceshipDirection.equals("W") && this.positionX > 0){
+            this.positionX--;
+        }else{
+            System.out.println("movement not computed, please insert one of the valid movements. (Ex: N,S,E,W)");
         }
     }
-*/
-
 }
+
+
 
 
 
