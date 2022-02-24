@@ -41,3 +41,10 @@ Saída esperada:
 1 3 N
 5 1 E
  ```
+
+###Comandos para requisição:
+```
+PUT http://localhost:8082/movement/1/LMLMLMLMM
+
+PUT http://localhost:8082/movement/2/MMRMMRMRRM
+```
