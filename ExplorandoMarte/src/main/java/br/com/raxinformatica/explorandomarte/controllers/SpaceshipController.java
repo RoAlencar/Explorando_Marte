@@ -39,7 +39,7 @@ public class SpaceshipController {
                 }
             }
             this.repository.save(newSpaceship);
-            return new ResponseEntity("Sucessful: we can launch the new space immediately.\n That's one small step for man, one giant leap for mankind",HttpStatus.CREATED);
+            return new ResponseEntity("Success: we can launch the new space immediately.\n That's one small step for man, one giant leap for mankind",HttpStatus.CREATED);
         }
     }
 
@@ -49,7 +49,7 @@ public class SpaceshipController {
         if(spaceships.size() > 0) {
             return ResponseEntity.ok(spaceships);
         } else {
-            return new ResponseEntity("Central command: No space ships have been launched, the mission has not started yet, please wait for the ships to be released.", HttpStatus.NO_CONTENT);
+            return new ResponseEntity("Central command: No spaceships have been launched, the mission has not started yet, please wait for the ships to be released.", HttpStatus.NO_CONTENT);
         }
     }
 
@@ -58,7 +58,7 @@ public class SpaceshipController {
         Optional<Spaceship> querySpaceship = this.repository.findById(id);
 
         if(querySpaceship.isPresent()){
-            return new ResponseEntity("Sucessful: Houston, we were able to locate the selected spacecraft", HttpStatus.OK);
+            return new ResponseEntity("Success: Houston, we were able to locate the selected spacecraft", HttpStatus.OK);
         } else {
             return new ResponseEntity("Command center: we were unable to contact the selected spacecraft, please verify that the identification number is correct.", HttpStatus.NOT_FOUND);
         }
@@ -69,7 +69,7 @@ public class SpaceshipController {
     public ResponseEntity deleteSpaceship(@PathVariable int id){
         if(this.repository.existsById(id)){
             this.repository.existsById(id);
-            return new ResponseEntity("Sucessful: Command center, selected ship is returning home.\n" +
+            return new ResponseEntity("Success: Command center, selected ship is returning home.\n" +
                     "Mission complete, my comrades",HttpStatus.OK);
         } else {
              return new ResponseEntity("Houston, can't find the selected ship, please verify that the identification number is correct.",HttpStatus.NOT_FOUND);

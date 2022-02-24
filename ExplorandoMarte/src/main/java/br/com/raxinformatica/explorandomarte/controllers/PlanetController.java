@@ -15,7 +15,7 @@ import static org.springframework.http.ResponseEntity.created;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
-@RequestMapping("planet")
+@RequestMapping("/planet")
 public class PlanetController {
 
     @Autowired
@@ -54,7 +54,7 @@ public class PlanetController {
         if (this.repository.existsById(id)){
             planet.setId(id);
             this.repository.save(planet);
-            return new ResponseEntity("Sucessful: the selected planet was been updated!",HttpStatus.OK);
+            return new ResponseEntity("Success: the selected planet was been updated!",HttpStatus.OK);
         } else {
             return new ResponseEntity("Critical failure: Unable to update the selected planet",HttpStatus.NOT_FOUND);
         }
@@ -64,7 +64,7 @@ public class PlanetController {
     public ResponseEntity deletePlanet(@PathVariable int id){
         if(this.repository.existsById(id)){
             this.repository.existsById(id);
-            return new ResponseEntity("Sucessfull: the selected planet was been deleted!", HttpStatus.OK);
+            return new ResponseEntity("Success: the selected planet was been deleted!", HttpStatus.OK);
         } else {
             return new ResponseEntity("Critical failure: Unable to delete the selected planet", HttpStatus.NOT_FOUND);
         }
