@@ -1,8 +1,7 @@
 package br.com.raxinformatica.explorandomarte.builders;
 
-import java.util.Arrays;
 import java.lang.String;
-import br.com.raxinformatica.explorandomarte.model.Planet;
+import br.com.raxinformatica.explorandomarte.models.Planet;
 
 
 

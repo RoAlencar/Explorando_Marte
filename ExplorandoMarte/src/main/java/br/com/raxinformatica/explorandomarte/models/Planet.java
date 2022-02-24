@@ -1,4 +1,4 @@
-package br.com.raxinformatica.explorandomarte.model;
+package br.com.raxinformatica.explorandomarte.models;
 
 import javax.persistence.*;
 

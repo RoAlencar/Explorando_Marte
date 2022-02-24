@@ -1,7 +1,7 @@
 package br.com.raxinformatica.explorandomarte.builders;
 
-import br.com.raxinformatica.explorandomarte.model.Planet;
-import br.com.raxinformatica.explorandomarte.model.Spaceship;
+import br.com.raxinformatica.explorandomarte.models.Planet;
+import br.com.raxinformatica.explorandomarte.models.Spaceship;
 
 
 public class SpaceshipBuilder {
